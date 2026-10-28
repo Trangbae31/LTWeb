@@ -1,0 +1,297 @@
+:root {
+    --lavender-bg: #F8F6FF;
+    --lavender-light: #F0EAFF;
+    --lavender: #DCCEFF;
+    --purple: #8B5CF6;
+    --purple-dark: #6D42C1;
+    --purple-hover: #5935A8;
+    --text: #302747;
+    --text-muted: #756A89;
+    --white: #FFFFFF;
+    --border: #E7DFF5;
+    --success-bg: #E5F7EC;
+    --success: #267348;
+    --warning-bg: #FFF3D8;
+    --warning: #966315;
+    --danger-bg: #FDE8EE;
+    --danger: #B42350;
+    --shadow: 0 8px 28px rgba(103, 75, 160, 0.09);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 32px 20px;
+    background: var(--lavender-bg) !important;
+    color: var(--text) !important;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI",
+                 Roboto, sans-serif;
+    font-size: 15px;
+    line-height: 1.6;
+}
+
+h1, h2, h3 {
+    color: var(--purple-dark) !important;
+    line-height: 1.3;
+}
+
+h1 {
+    margin-top: 0;
+    margin-bottom: 24px;
+    font-size: clamp(24px, 4vw, 32px);
+}
+
+h2 {
+    font-size: 22px;
+}
+
+p {
+    color: var(--text-muted);
+}
+
+a {
+    color: var(--purple-dark) !important;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+a:hover {
+    color: var(--purple-hover) !important;
+    text-decoration: underline;
+}
+
+button, input, select, textarea {
+    font: inherit;
+}
+
+button, .btn, a.btn {
+    display: inline-block;
+    padding: 10px 17px;
+    border: 1px solid var(--purple) !important;
+    border-radius: 10px;
+    background: var(--purple) !important;
+    color: var(--white) !important;
+    font-weight: 600;
+    text-decoration: none !important;
+    cursor: pointer;
+    transition: background 0.2s, transform 0.2s;
+}
+
+button:hover, .btn:hover, a.btn:hover {
+    background: var(--purple-hover) !important;
+    border-color: var(--purple-hover) !important;
+    color: var(--white) !important;
+    transform: translateY(-1px);
+}
+
+input:not([type="checkbox"]):not([type="radio"]),
+select,
+textarea {
+    width: 100%;
+    padding: 11px 13px;
+    border: 1px solid var(--border) !important;
+    border-radius: 9px;
+    background: var(--white) !important;
+    color: var(--text) !important;
+    outline: none;
+}
+
+input:focus, select:focus, textarea:focus {
+    border-color: var(--purple) !important;
+    box-shadow: 0 0 0 3px rgba(139, 92, 246, 0.13);
+}
+
+label {
+    display: block;
+    margin-bottom: 6px;
+    color: var(--text) !important;
+    font-weight: 600;
+}
+
+form {
+    margin-bottom: 18px;
+}
+
+form label {
+    margin-top: 14px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: var(--white);
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+th {
+    padding: 14px 12px;
+    background: var(--lavender-light) !important;
+    color: var(--purple-dark) !important;
+    text-align: left;
+    font-weight: 700;
+}
+
+td {
+    padding: 13px 12px;
+    border-bottom: 1px solid var(--border) !important;
+    color: var(--text) !important;
+    vertical-align: middle;
+}
+
+tbody tr:hover {
+    background: #FBF9FF !important;
+}
+
+tbody tr:last-child td {
+    border-bottom: none !important;
+}
+
+form button {
+    margin-top: 12px;
+}
+
+input[type="submit"] {
+    padding: 10px 17px;
+    border: none;
+    border-radius: 10px;
+    background: var(--purple) !important;
+    color: var(--white) !important;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background: var(--purple-hover) !important;
+}
+
+hr {
+    border: none;
+    border-top: 1px solid var(--border);
+    margin: 24px 0;
+}
+
+small {
+    color: var(--text-muted);
+}
+
+@media (max-width: 768px) {
+    body {
+        padding: 18px 12px;
+    }
+
+    table {
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+
+    button, .btn, a.btn {
+        margin-bottom: 5px;
+    }
+}
+
+/* ===== LAVENDER PASTEL - FINAL OVERRIDES ===== */
+
+body {
+    background: #F7F4FF !important;
+    color: #33284A !important;
+}
+
+h1, h2, h3 {
+    color: #7650C9 !important;
+}
+
+/* Dong bo nut va lien ket dang nut */
+button,
+input[type="submit"],
+a.btn,
+a.button,
+a[href*="create.php"],
+a[href*="edit.php"],
+a[href*="delete.php"],
+a[href*="index.php"] {
+    background: #8B5CF6 !important;
+    color: #FFFFFF !important;
+    border: 1px solid #8B5CF6 !important;
+    border-radius: 10px !important;
+    padding: 10px 16px !important;
+    font-weight: 600 !important;
+    text-decoration: none !important;
+    box-shadow: 0 3px 8px rgba(139, 92, 246, 0.14);
+}
+
+button:hover,
+input[type="submit"]:hover,
+a.btn:hover,
+a.button:hover,
+a[href*="create.php"]:hover,
+a[href*="edit.php"]:hover,
+a[href*="delete.php"]:hover,
+a[href*="index.php"]:hover {
+    background: #7043D6 !important;
+    color: #FFFFFF !important;
+    border-color: #7043D6 !important;
+}
+
+/* Nut xoa: mau hong tim nhat, de phan biet */
+a[href*="delete.php"] {
+    background: #FCE7F3 !important;
+    color: #A32D69 !important;
+    border-color: #F5C3DE !important;
+    box-shadow: none !important;
+}
+
+a[href*="delete.php"]:hover {
+    background: #F8D4E8 !important;
+    color: #8E2059 !important;
+}
+
+/* Bang du lieu */
+table {
+    border: 1px solid #E8DFF8 !important;
+    border-radius: 14px !important;
+    box-shadow: 0 5px 22px rgba(103, 75, 160, 0.06);
+}
+
+th {
+    background: #EEE7FF !important;
+    color: #6941B5 !important;
+    padding: 16px 12px !important;
+}
+
+td {
+    padding: 16px 12px !important;
+}
+
+tbody tr:nth-child(even) {
+    background: #FCFAFF !important;
+}
+
+tbody tr:hover {
+    background: #F4EFFF !important;
+}
+
+/* O nhap lieu */
+input:not([type="checkbox"]):not([type="radio"]),
+select,
+textarea {
+    border-radius: 10px !important;
+    border-color: #E2D7F5 !important;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    border-color: #A78BFA !important;
+    box-shadow: 0 0 0 3px rgba(167, 139, 250, 0.17) !important;
+}
+
+@media (max-width: 768px) {
+    td, th {
+        padding: 12px 10px !important;
+    }
+}
